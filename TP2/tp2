@@ -1,17 +1,9 @@
 TP2 R504 
 
-1.1/ Contributeurs 
-
-Accès au graphique des contributeurs
-    1. Dans GitHub.com, accédez à la page principale du dépôt.
-    2. Sous le nom de votre référentiel, cliquez sur 
-    • Insights.
+1.1/ Contributeurs  
+Il y a 9 contributeurs. 
 
 
-    • Dans la barre latérale gauche, cliquez sur Contributeurs. 
-Dans le cas du projet : https://github.com/onlywei/explain-git-with-d3 
- 
-Il y a alors 9 contributeurs. 
 1.2/ 
 maleknor@ur.univ-rouen.fr@IUTR-20-48F1:~$ time git clone https://github.com/onlywei/explain-git-with-d3
 Clonage dans 'explain-git-with-d3'...
@@ -25,6 +17,7 @@ user	0m0,063s
 sys	0m0,032s
 
 Quel espace occupe-t-il ? 
+
 
 du -h ./explain-git-with-d3
 
@@ -50,9 +43,8 @@ du -h ./explain-git-with-d3
 280K	./explain-git-with-d3/.git
 408K	./explain-git-with-d3
 
-1.3/
- 
 
+1.3/
 maleknor@ur.univ-rouen.fr@IUTR-20-48F1:~$ cd explain-git-with-d3
 maleknor@ur.univ-rouen.fr@IUTR-20-48F1:~/explain-git-with-d3$ git blame index.html 
 
@@ -67,3 +59,69 @@ La commande git blame permet d’éxaminer un fichier ligne par ligne
 3e5d1596 (Jake Ginnivan      2014-06-17 21:47:47 +0100 329)             name: 'Tag', 
 
 La ligne 329 a été commit par Jake Ginnivan
+
+
+
+1.5/ 
+Le hash est : 3e5d1596 
+
+
+
+
+1.6/ 
+Le message de l'auteur est : "Adding tag command reference" 
+
+
+
+1.7/ 
+Date:   Tue Jun 17 21:47:47 2014 +0100
+
+
+1.8/ 
+Initial commit 
+commit b4ca8f29c1a9712cc4c4c0199758570b38bdf873 
+
+
+1.9/ 
+Author: onlywei <weiwang85@gmail.com>
+
+
+
+1.10/ 
+git log --oneline | wc -l
+91
+
+
+
+1.11/ 
+L'option --oneline affiche chaque commit sous une forme très condensée, en affichant uniquement le message du commit et son hachage court (abrévié). 
+L'option --format=reference est similaire, mais elle inclut également la référence (branche ou étiquette) à laquelle chaque commit est attaché. 
+
+
+
+1.12/
+git log --format="%an"
+
+
+
+1.13/
+git log --format="%an" | sort | uniq | wc -l
+
+2.1/
+git status 
+
+
+2.2/
+la branche main
+
+
+2.5/
+Oui il est versionné 
+
+
+
+2.6/ 
+
+
+
+
