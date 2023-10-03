@@ -1,0 +1,69 @@
+TP2 R504 
+
+1.1/ Contributeurs 
+
+Accès au graphique des contributeurs
+    1. Dans GitHub.com, accédez à la page principale du dépôt.
+    2. Sous le nom de votre référentiel, cliquez sur 
+    • Insights.
+
+
+    • Dans la barre latérale gauche, cliquez sur Contributeurs. 
+Dans le cas du projet : https://github.com/onlywei/explain-git-with-d3 
+ 
+Il y a alors 9 contributeurs. 
+1.2/ 
+maleknor@ur.univ-rouen.fr@IUTR-20-48F1:~$ time git clone https://github.com/onlywei/explain-git-with-d3
+Clonage dans 'explain-git-with-d3'...
+remote: Enumerating objects: 397, done.
+remote: Total 397 (delta 0), reused 0 (delta 0), pack-reused 397
+Réception d'objets: 100% (397/397), 92.00 Kio | 2.63 Mio/s, fait.
+Résolution des deltas: 100% (227/227), fait.
+
+real	0m0,630s
+user	0m0,063s
+sys	0m0,032s
+
+Quel espace occupe-t-il ? 
+
+du -h ./explain-git-with-d3
+
+12K	./explain-git-with-d3/css
+68K	./explain-git-with-d3/js
+8,0K	./explain-git-with-d3/images
+8,0K	./explain-git-with-d3/.git/info
+4,0K	./explain-git-with-d3/.git/branches
+8,0K	./explain-git-with-d3/.git/refs/heads
+4,0K	./explain-git-with-d3/.git/refs/tags
+8,0K	./explain-git-with-d3/.git/refs/remotes/origin
+12K	./explain-git-with-d3/.git/refs/remotes
+28K	./explain-git-with-d3/.git/refs
+64K	./explain-git-with-d3/.git/hooks
+8,0K	./explain-git-with-d3/.git/logs/refs/heads
+8,0K	./explain-git-with-d3/.git/logs/refs/remotes/origin
+12K	./explain-git-with-d3/.git/logs/refs/remotes
+24K	./explain-git-with-d3/.git/logs/refs
+32K	./explain-git-with-d3/.git/logs
+4,0K	./explain-git-with-d3/.git/objects/info
+112K	./explain-git-with-d3/.git/objects/pack
+120K	./explain-git-with-d3/.git/objects
+280K	./explain-git-with-d3/.git
+408K	./explain-git-with-d3
+
+1.3/
+ 
+
+maleknor@ur.univ-rouen.fr@IUTR-20-48F1:~$ cd explain-git-with-d3
+maleknor@ur.univ-rouen.fr@IUTR-20-48F1:~/explain-git-with-d3$ git blame index.html 
+
+
+La commande git blame permet d’éxaminer un fichier ligne par ligne 
+
+
+
+
+
+1.4/ 
+3e5d1596 (Jake Ginnivan      2014-06-17 21:47:47 +0100 329)             name: 'Tag', 
+
+La ligne 329 a été commit par Jake Ginnivan
