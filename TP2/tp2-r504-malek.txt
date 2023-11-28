@@ -1,0 +1,127 @@
+TP2 R504 
+
+1.1/ Contributeurs  
+Il y a 9 contributeurs. 
+
+
+1.2/ 
+maleknor@ur.univ-rouen.fr@IUTR-20-48F1:~$ time git clone https://github.com/onlywei/explain-git-with-d3
+Clonage dans 'explain-git-with-d3'...
+remote: Enumerating objects: 397, done.
+remote: Total 397 (delta 0), reused 0 (delta 0), pack-reused 397
+Réception d'objets: 100% (397/397), 92.00 Kio | 2.63 Mio/s, fait.
+Résolution des deltas: 100% (227/227), fait.
+
+real	0m0,630s
+user	0m0,063s
+sys	0m0,032s
+
+Quel espace occupe-t-il ? 
+
+
+du -h ./explain-git-with-d3
+
+12K	./explain-git-with-d3/css
+68K	./explain-git-with-d3/js
+8,0K	./explain-git-with-d3/images
+8,0K	./explain-git-with-d3/.git/info
+4,0K	./explain-git-with-d3/.git/branches
+8,0K	./explain-git-with-d3/.git/refs/heads
+4,0K	./explain-git-with-d3/.git/refs/tags
+8,0K	./explain-git-with-d3/.git/refs/remotes/origin
+12K	./explain-git-with-d3/.git/refs/remotes
+28K	./explain-git-with-d3/.git/refs
+64K	./explain-git-with-d3/.git/hooks
+8,0K	./explain-git-with-d3/.git/logs/refs/heads
+8,0K	./explain-git-with-d3/.git/logs/refs/remotes/origin
+12K	./explain-git-with-d3/.git/logs/refs/remotes
+24K	./explain-git-with-d3/.git/logs/refs
+32K	./explain-git-with-d3/.git/logs
+4,0K	./explain-git-with-d3/.git/objects/info
+112K	./explain-git-with-d3/.git/objects/pack
+120K	./explain-git-with-d3/.git/objects
+280K	./explain-git-with-d3/.git
+408K	./explain-git-with-d3
+
+
+1.3/
+maleknor@ur.univ-rouen.fr@IUTR-20-48F1:~$ cd explain-git-with-d3
+maleknor@ur.univ-rouen.fr@IUTR-20-48F1:~/explain-git-with-d3$ git blame index.html 
+
+
+La commande git blame permet d’éxaminer un fichier ligne par ligne 
+
+
+
+
+
+1.4/ 
+3e5d1596 (Jake Ginnivan      2014-06-17 21:47:47 +0100 329)             name: 'Tag', 
+
+La ligne 329 a été commit par Jake Ginnivan
+
+
+
+1.5/ 
+Le hash est : 3e5d1596 
+
+
+
+
+1.6/ 
+Le message de l'auteur est : "Adding tag command reference" 
+
+
+
+1.7/ 
+Date:   Tue Jun 17 21:47:47 2014 +0100
+
+
+1.8/ 
+Initial commit 
+commit b4ca8f29c1a9712cc4c4c0199758570b38bdf873 
+
+
+1.9/ 
+Author: onlywei <weiwang85@gmail.com>
+
+
+
+1.10/ 
+git log --oneline | wc -l
+91
+
+
+
+1.11/ 
+L'option --oneline affiche chaque commit sous une forme très condensée, en affichant uniquement le message du commit et son hachage court (abrévié). 
+L'option --format=reference est similaire, mais elle inclut également la référence (branche ou étiquette) à laquelle chaque commit est attaché. 
+
+
+
+1.12/
+git log --format="%an"
+
+
+
+1.13/
+git log --format="%an" | sort | uniq | wc -l
+
+2.1/
+git status 
+
+
+2.2/
+la branche main
+
+
+2.5/
+Oui il est versionné 
+
+
+
+2.6/ 
+
+
+
+
